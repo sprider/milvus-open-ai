@@ -1,10 +1,10 @@
 import os
 import logging
 from dotenv import load_dotenv
-from langchain.document_loaders import DirectoryLoader
+from langchain_community.document_loaders import DirectoryLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.vectorstores import Milvus
-from langchain.embeddings.openai import OpenAIEmbeddings
+from langchain_community.vectorstores import Milvus
+from langchain_openai import OpenAIEmbeddings
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)

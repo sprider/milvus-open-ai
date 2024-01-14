@@ -3,4 +3,7 @@ pymilvus
 openai 
 tiktoken 
 langchain
+langchain_openai
+langchain-community 
+langchain-core
 unstructured

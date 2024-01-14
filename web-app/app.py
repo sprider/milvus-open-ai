@@ -2,13 +2,13 @@ import os
 import logging
 from dotenv import load_dotenv
 from flask import Flask, request, render_template, jsonify
-from langchain.llms import OpenAI
-from langchain.vectorstores import Milvus
+from langchain_openai import OpenAI
+from langchain_community.vectorstores import Milvus
 from langchain.chains import ConversationalRetrievalChain
 from langchain.memory import ConversationBufferWindowMemory
-from langchain.embeddings.openai import OpenAIEmbeddings
-from langchain.prompts.prompt import PromptTemplate
-from langchain.callbacks import get_openai_callback
+from langchain_openai import OpenAIEmbeddings
+from langchain_core.prompts.prompt import PromptTemplate
+from langchain_community.callbacks import get_openai_callback
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
